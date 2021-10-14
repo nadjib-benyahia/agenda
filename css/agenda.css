@@ -1,0 +1,428 @@
+body {
+    margin:;
+    padding:;
+    font-family: sans-serif;
+    background: linear-gradient(#ebab86, #e9eff5);
+    background-repeat: no-repeat; 
+}
+table
+{
+    border: ;
+    border-radius: 20px;
+}
+
+td, th 
+{
+    width: 200px;
+    padding: 25px;
+    font-size: 13px;
+    border-radius: 50px;
+}
+.Agenda
+{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+}
+
+.pre-button, .next-button 
+{
+    padding: 0px 50px 0px;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    cursor: pointer;
+    width: 1em;
+    height: 1em;
+    line-height: 1em;
+    color: #e66b6b;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+}
+
+.pre-button:hover, .next-button:hover {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.pre-button:active,.next-button:active{
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
+}
+
+.pre-button {
+    float: left;
+    margin-left: 0.5em;
+}
+
+.next-button {
+    float: right;
+    margin-right: 0.5em;
+}
+
+thead tr {
+    color: #e66b6b;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+tbody tr {
+    color: #252a25;
+}
+
+tbody td{
+    width: 14%;
+    cursor: pointer;
+    -webkit-transition:all 0.2s ease-in;
+    transition:all 0.2s ease-in;
+}
+
+tbody td:hover, .selected {
+    color: rgb(255, 255, 255);
+    background-color: #2a3246;
+    border: none;
+}
+
+tbody td:active {
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
+}
+.soirées
+{
+    background-color: rgb(171, 164, 236);
+    color: white;
+    font-size: 15px;
+}
+.ferier
+{
+    background-color: red;
+    color: white;
+    font-size: 15px;
+}
+.créneaux
+{
+    background-color: grey;
+    color: white;
+    font-size: 15px;
+}
+
+.mois
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.moi
+{
+    display: flex;
+    flex-direction: row;
+    padding: 0px 50px 0px;
+    font-size: 25px;
+}
+#créneaux
+{
+    background-color: grey;
+    color: white;
+}
+#craneaux
+{
+    background: linear-gradient(to left, red 30%, red 45%, grey 55%, grey 70% );
+    color: white;
+}
+#ferier
+{
+    background-color: red;
+    color: white;  
+}
+#soirées
+{
+    background-color: rgb(171, 164, 236);
+    color: white;
+}
+#aniv
+{
+    background: linear-gradient(to left, rgb(6, 231, 17) 30%, rgb(6, 231, 17) 45%, rgb(171, 164, 236) 55%, rgb(171, 164, 236) 70% );
+    color: white;
+}
+  
+.login-box {
+    
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+}
+
+.login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+
+.login-box form a {
+    position: relative;
+    left: 550px;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+}
+
+.login-box a:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+}
+
+.login-box a span {
+    position: absolute;
+    display: block;
+}
+
+.login-box a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+        }
+    50%,100% {
+        left: 100%;
+    }
+    }
+
+.login-box a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+    50%,100% {
+        top: 100%;
+    }
+    }
+
+.login-box a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+0% {
+    right: -100%;
+}
+50%,100% {
+    right: 100%;
+}
+}
+
+.login-box a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+0% {
+    bottom: -100%;
+}
+50%,100% {
+    bottom: 100%;
+}
+}
+
+.sec
+{
+    display: flex;
+    flex-direction: column;
+    padding: 200px 450px 500px;
+}
+div
+{
+    display: flex;
+    flex-direction: column;
+}
+.classe
+{
+    display: flex;
+    flex-direction: row;
+}
+input
+{
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+h1
+{
+    font-size: 40px;
+    color: white;
+}
+  
+.login-boxx {
+    position: absolute;
+    top: 300px;
+    left: 710px;
+    width: 400px;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    
+    border-radius: 10px;
+}
+
+.login-boxx h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+
+.login-boxx form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+}
+
+.login-boxx a:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+}
+
+.login-boxx a span {
+    position: absolute;
+    display: block;
+}
+
+.login-boxx a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+        }
+    50%,100% {
+        left: 100%;
+    }
+    }
+
+.login-boxx a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+    50%,100% {
+        top: 100%;
+    }
+    }
+
+.login-boxx a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+0% {
+    right: -100%;
+}
+50%,100% {
+    right: 100%;
+}
+}
+
+.login-boxx a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+0% {
+    bottom: -100%;
+}
+50%,100% {
+    bottom: 100%;
+}
+}
